@@ -1,13 +1,14 @@
 <template>
-  <div class="text-2xl p-4">
+  <div class="text-2xl pt-4 pb-2 px-4">
     You are connecting from
     <strong class="underline decoration-indigo-500">{{ city }}</strong> in
     <strong class="underline decoration-indigo-500">{{ country }}</strong
     >.
   </div>
-  <div class="pt-2 pb-4">
+  <div class="p-2">
     <country-flag :country="countryCode" size="big" />
   </div>
+  <div class="pb-4 font-mono">Current Time: {{ localtime }} {{ timezone }}</div>
 </template>
 
 <script>
